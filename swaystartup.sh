@@ -9,8 +9,8 @@ if [[ $ID == "fedora" ]]; then
 fi
 
 if [[ $ID == "arch" ]]; then
+  swaymsg "exec --no-startup-id vivaldi"
   swaymsg "exec --no-startup-id nextcloud"
   # exec --no-startup-id ferdium --UseOzonePlatform --ozone-platform-hint=wayland
   swaymsg "exec  --no-startup-id 'signal-desktop --enable-features=UseOzonePlatform,WaylandWindowDecorations,WebRTCPipeWireCapturer --ozone-platform-hint=wayland"
-  swaymsg "exec --no-startup-id vivaldi"
 fi
